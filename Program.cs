@@ -32,6 +32,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.ConfigureRoutes(); // Adicionando a configuração de rotas.
+app.ConfigProductRoutes(); 
+app.ConfigTaskRoutes(); 
 app.MapControllers();
 app.Run();
